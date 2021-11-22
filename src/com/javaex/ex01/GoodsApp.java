@@ -1,5 +1,11 @@
 package com.javaex.ex01;//2021.11.21(월)14:00수업//Chap02.객체지향 프로그래밍 중 3.클래스의 정의 중 클래스의 구조, 필드
-
+/*
+[문제]
+Point 클래스를 만드세요
+x, y 좌표를 나타낼 수 있는 필드 작성
+x, y 좌표에 접근할 수 있는 getter/setter 메소드 작성
+다음 실행 결과를 참조하여 draw()메소드 작성
+*/
 public class GoodsApp {
 
 	public static void main(String[] args) {
