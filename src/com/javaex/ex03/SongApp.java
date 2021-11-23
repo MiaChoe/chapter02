@@ -6,7 +6,8 @@ public class SongApp {
 		
 		
 		//setter를 통해 정보를 메모리에 넣었는데
-		Song s1 = new Song("좋은 날", "아이유", "Real", "이민수", "2010", 3);
+		Song s1 = new Song();
+		//Song s1 = new Song("좋은 날", "아이유", "Real", "이민수", "2010", 3);
 		s1.setTitle("좋은 날");
 		s1.setArtist("아이유");
 		s1.setAlbum("Real");

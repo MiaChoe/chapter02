@@ -15,17 +15,25 @@ public class PointApp {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Point p01 = new Point(3, 6);//setter를 이용하지 않고 바로 올리는 법
+		Point p01 = new Point(3, 6);//Point(2) setter를 이용하지 않고 바로 올리는 법
 		/*
-		p01.draw();
+		p01.setX(3);
+		p01.setY(6);
 		*/
+		p01.draw();
 		
-		Point p02 = new Point();
+		
+		Point p02 = new Point(); //Point()
 		p02.setX(7);
 		p02.setY(7);
 		p02.draw();
 		
-		System.out.println(p01.getX());
+		
+		Point p03 = new Poin(100); //Point(1)
+		p03.setY(101);
+		p03.draw();
+		
+		
 		
 	}
 

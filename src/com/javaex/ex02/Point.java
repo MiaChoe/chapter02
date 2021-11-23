@@ -14,7 +14,34 @@ public class Point {
 	private int x;
 	private int y;
 
+	/*
 	//생성자
+	public Point() {
+		System.out.println("Point()실행");
+	}
+	*/
+	
+	public Point(int x, String name) {
+		//해당클래스를 메모리에 올리는 일
+		this.x = x;
+		System.out.println("Point(1)");
+	}
+	
+	//아래와 같이는 못하는데 위의 int x와 자료형까지 같기 때문이다
+	public Point(int y, String name) {
+		//해당클래스를 메모리에 올리는 일
+		this.y = y;
+	}
+	
+	
+	
+	
+	public Point(int x, int y) {
+		//위와 같이 쓰면 무조건 해당클래스를 메모리에 올려둠. setter가 했던 일을 똑같이 해달라고 이제 밑에 일 시킬 차례
+		this.x = x;
+		this y = y;
+		System.out.println("Point(2)");
+	}
 	
 	
 	
@@ -44,7 +71,11 @@ public class Point {
 	public void draw() {
 		System.out.println("점[x= "+ x +", " +"  y =" + y + " 을 그렸습니다.");
 	}
-	
-	
+		
+	@override
+	public String toString() {
+		return "Point[x="+x+", "
+		
+	}
 	
 }
