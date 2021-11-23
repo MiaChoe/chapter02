@@ -9,15 +9,15 @@ public class Goods {
 	
 	//생성자
 	public Goods() {
-	//메모리에 올리는 작업	
+	//메모리에 올리는 작업
+	System.out.println("Goods()");
 	}
-
-	
 	
 	public Goods(String name, int price) {
 	//메모리에 올리는 작업
 	this.name = name;
 	this.price = price;
+	System.out.println("Goods(String name, int price)");
 	}
 	
 	
