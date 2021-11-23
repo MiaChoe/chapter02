@@ -1,4 +1,5 @@
 package com.javaex.ex01;//2021.11.21(월)16:13수업//객체지향 프로그래밍 중 3.클래스의 정의 중 메소드
+						//2021.11.22(화)10:44수업//this 추가
 /*
 [문제]
 Point 클래스를 만드세요
@@ -15,16 +16,16 @@ public class Goods {
 	int price;
 	
 	//메소드 정의하는 영역
-	public void setName(String n) {
-		name = n;
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 	public String getName() {
 		return name;
 	}
 	
-	public void setPrice(int p) {
-		price = p;
+	public void setPrice(int price) {
+		this.price = price;
 	}
 	
 	public int getPrice() {
