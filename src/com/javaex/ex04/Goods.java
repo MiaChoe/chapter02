@@ -9,7 +9,7 @@ public class Goods {
 	
 	//생성자
 	public Goods() {
-	//메모리에 올리는 작업
+	//메모리에 올리는 작업: 얜 밑에 애 때문에 쓰이지도 않았을 것
 	System.out.println("Goods()");
 	}
 	
