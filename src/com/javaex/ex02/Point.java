@@ -19,17 +19,22 @@ public class Point {
 	
 	
 	//메소드: 필드의 x와 밖에서 받은 x를 잘 구분해두는 것도 중요함. 하다보면 필드의 변수와 메소드 새 변수 같은 게 ㅈ홓아
-	public void setX(int xx); {
-		this x = xx;	
-	}
+	public void setX(int x); {
+		if(x>=0) {
+		this.x = x;	
+		} 
+		else {
+		this.x = 0;
+		}
+	}	
 	
 	//값을 읽어오는 거라서 특별히 불러올 게 없음
 	public int getX() {
 		return x;
 	}
 	
-	public int setY(int yy) {
-		this y = yy;
+	public int setY(int y) {
+		this.y = y;
 	}
 	
 	public int getY() {
