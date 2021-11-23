@@ -23,6 +23,7 @@ public class Song {
 		this.title = title;
 	}
 
+
 	public String getArtist() {
 		return artist;
 	}
@@ -55,7 +56,7 @@ public class Song {
 		this.year = year;
 	}
 
-	public String getTrack() {
+	public int getTrack() {
 		return track;
 	}
 
@@ -64,5 +65,17 @@ public class Song {
 	}
 
 	// 메소드: 일반
+	public void showInfo() {
+		System.out.println(artist + "," + title + " (" +album + ", " + year + ", " + track + "번 track, " + composer + " 작곡)");
+		
+	}
+	
 
+	@Override
+	public String toString() {
+		return "Song [title=" + title + ", artist=" + artist + ", album=" + album + ", composer=" + composer + ", year="
+				+ year + ", track=" + track + "]";
+	}
+	
+	
 }
