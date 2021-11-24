@@ -23,11 +23,36 @@ public class Song {
 	private String year;
 	private int track;
 	
-	//생성자
+	//(디폴트)생성자
 	public Song() {
 		//메모리에 올리는 일
+		System.out.println("Song(0)");
 	}
 
+	public Song(String title, String artist, String album, String compser, String year) {
+		super();
+		this.title = title;
+		this.artist = artist;
+		this.album = album;
+		
+		//작곡가:작곡가 이름이 최대10글자까지만 입력 (코드100줄)
+		this.compser = compser;
+		
+		//년도: 올해(2021년)이후 년도가 들어오면 2021년으로 처리
+		this.year = year;
+		System.out.println("Song(5)");
+	}
+
+	public Song(String tilte, String artist, String album, String composer, String year, int track) {
+		//메모리 올리는 일
+		this(title, artist, album, composer, year);
+		
+	}
+	
+	
+	
+	
+	//Generator using Fiels통해서 바로 생성, 6개 필드값 모두 초기화하는 생성자 버스커버스커 위해 새로 추가함
 	public Song(String title, String artist, String album, String compser, String year, int track) {
 		super();
 		this.title = title;
@@ -36,16 +61,14 @@ public class Song {
 		this.compser = compser;
 		this.year = year;
 		this.track = track;
-		System.out.println("Song(6)");
+		System.out.println(Song(6));
 	}
 
-	
-	
-	
 	//메소드-getter/setter	
 	
 	public String getTitle() {
-		return title;
+		//return title; 아래와 같이 써도 돼. 2021.11.24(화)11:07 다만 헷갈릴 일이 없으므로 지금 주석칸처럼 많이 쓴다
+		return this.title;
 	}
 
 	public void setTitle(String title) {
