@@ -29,7 +29,7 @@ public class PointApp {
 		p02.draw();
 		
 		
-		Point p03 = new Poin(100); //Point(1)
+		Point p03 = new Point(100); //Point(1)
 		p03.setY(101);
 		p03.draw();
 		

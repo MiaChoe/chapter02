@@ -1,4 +1,5 @@
-package com.javaex.ex02;//2021.11.22(화)09:56수업
+package com.javaex.ex02;//2021.11.21(화)09:56수업
+						//2021.11.24(수)13:53, boolean넣은 draw
 /*
  Goods 클래스를 만드세요
 1) 필드접근자를 private로 작성해서 외부에서 접근할 수 없게 합니다.
@@ -72,6 +73,21 @@ public class Point {
 		System.out.println("점[x= "+ x +", " +"  y =" + y + " 을 그렸습니다.");
 	}
 		
+	
+	//action=true 그리는 기능, action=false면 지우는 기능
+	public void draw(boolean action) {
+		if(action == true) {
+			System.out.println("점[x=" + x + ", y=" + y + "]을 그렸습니다");
+		}
+		else if(action == false) {
+			System.out.println("점[x=" + x + ", y=" + y + "]을 그렸습니다");
+		}
+		else {
+				System.out.println("점[x=" + x + ", y=" + y + "]을 그렸습니다");	
+		}	
+	}
+	
+	
 	@override
 	public String toString() {
 		return "Point[x="+x+", "

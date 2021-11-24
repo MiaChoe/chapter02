@@ -20,9 +20,14 @@ public class SongApp {
 		s02.setTrack(2); //옆과 같이 추가사항처럼 따로 기입
 		//System.out.println(s02.toString());
 
+		System.out.println("--------------------------");
 		//6개 모두 필드값 초기화하는 생성자 사용(=이번엔 여섯가지를 한번에 넣으려는 s03이 생긴 경우)
 		Song s03 = new Song("벚꽃엔딩", "버스커버스커", "버스커버스커1집", "장범준", "2012", 4);
 		System.out.println(s03.toString());
+		System.out.println("--------------------------");
+		
+		Song s04 = new Song("벚꽃엔딩2", "버스커버스커2", "버스커버스커1집2", "장범준2");
+		System.out.println(s04.toString());
 		System.out.println("--------------------------");
 		
 		
@@ -34,6 +39,15 @@ public class SongApp {
 		
 		//버스커버스커 출력
 		s03.showInfo();
+		
+		System.out.println("--------------------------");
+		Song s05 = new Song();
+		
+		
+		
+		
+		
+		
 	}
 	
 	

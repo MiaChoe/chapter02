@@ -28,6 +28,13 @@ public class Song {
 		//메모리에 올리는 일
 		System.out.println("Song(0)");
 	}
+	
+	public Song(String title, String artist, String album, String compser) {
+		this(title, artist, album, composer, ""); //맨 마지막 track자리에 공백을 주는 경우
+		System.out.println("Song(4)");
+	}
+	
+	
 
 	public Song(String title, String artist, String album, String compser, String year) {
 		super();
@@ -42,16 +49,8 @@ public class Song {
 		this.year = year;
 		System.out.println("Song(5)");
 	}
-
-	public Song(String tilte, String artist, String album, String composer, String year, int track) {
-		//메모리 올리는 일
-		this(title, artist, album, composer, year);
-		
-	}
 	
-	
-	
-	
+	/*
 	//Generator using Fiels통해서 바로 생성, 6개 필드값 모두 초기화하는 생성자 버스커버스커 위해 새로 추가함
 	public Song(String title, String artist, String album, String compser, String year, int track) {
 		super();
@@ -64,6 +63,8 @@ public class Song {
 		System.out.println(Song(6));
 	}
 
+	*/
+	
 	//메소드-getter/setter	
 	
 	public String getTitle() {
