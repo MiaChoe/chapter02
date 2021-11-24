@@ -21,22 +21,22 @@ public class Song {
 	private String album;
 	private String compser;
 	private String year;
-	private int ticket;
+	private int track;
 	
 	//생성자
-	public song() {
-		
+	public Song() {
+		//메모리에 올리는 일
 	}
 
-	public Song(String title, String artist, String album, String compser, String year, int ticket) {
+	public Song(String title, String artist, String album, String compser, String year, int track) {
 		super();
 		this.title = title;
 		this.artist = artist;
 		this.album = album;
 		this.compser = compser;
 		this.year = year;
-		this.ticket = ticket;
-		
+		this.track = track;
+		System.out.println("Song(6)");
 	}
 
 	
@@ -44,7 +44,7 @@ public class Song {
 	
 	//메소드-getter/setter	
 	
-public String getTitle() {
+	public String getTitle() {
 		return title;
 	}
 
@@ -84,17 +84,19 @@ public String getTitle() {
 		this.year = year;
 	}
 
-	public int getTicket() {
-		return ticket;
+	public int getrack() {
+		return track;
 	}
 
-	public void setTicket(int ticket) {
-		this.ticket = ticket;
+	public void setTrack(int track) {
+		this.track = track;
 	}
+	
+
 
 
 	//메소드-일반
-@Override
+	@Override
 	public String toString() {
 		return "Song [title=" + title + ", artist=" + artist + ", album=" + album + ", compser=" + compser + ", year="
-				+ year + ", ticket=" + ticket + "]";
+				+ year + ", track=" + track + "]";
