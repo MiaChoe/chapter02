@@ -57,7 +57,7 @@ public class Song {
 		this.title = title;
 		this.artist = artist;
 		this.album = album;
-		this.compser = compser;
+		this.compser = composer;
 		this.year = year;
 		this.track = track;
 		System.out.println(Song(6));
