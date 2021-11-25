@@ -1,26 +1,32 @@
-package com.javaex.ex09;//2021.11.25(목)11:49수업,static
+package com.javaex.ex09;//2021.11.25(목)11:49수업,생성자 오버로딩
+						//매개변수가 double인지 int인지 파악해서 일일이 plusDouInt인지 plusD인지 구분하기 싫을 때,
+						//같은 이름의 메소드가 다 사용할 수 있게 해주는 기능 = method overloading
 
 public class MyMathApp {
-		//필드: 필요 없음
+	//필드: 필요 없음
+	
+	//생성자: 디폴트생성자 사용
+			
+	//메소드gs: 필드 없음
+			
+	//메소드 일반
+	public static void main(String[] args) {
+		//MyMath클래스를 메모리에 올리고 그 안에 있는 plus.Method를 쓰려고 이 클래슬 만듦
 		
-		//생성자: 디폴트생성자 사용
+		MyMath myMath = new MyMath(); //디폴트 생성자 생길 거 알고 생성자 안 만든 거야
 		
-		//메소드gs: 필드 없음
+		int sum01 = myMath.plusInt(3, 6);
+		System.out.println(sum01);
 		
-		//메소드 일반
-		public int plusInt(int a, int b) {
-			return a+b; //int sum = a+b; 이렇게 굳이 변수 안 만들고 바로 return에 입력	
-		}
+		double sum02 = myMath.plusDouble(4.3, 5.5);
+		System.out.println(sum02);
 		
-		public double plusDouble(double a, double b) {
-			return a+b;
-		}
+		double sum03 = myMath.plusDoubleInt(5.5, 9);
+		System.out.println(sum03);
 		
-		public double plusDoubleInt(double a, int b) {
-			double sum = a+b;
-			return a+b;
-		}
-
+		double sum04 = myMath.plusIntDouble(20, 99.9);
+		System.out.println(sum04);
+	
 	}
 
 }
