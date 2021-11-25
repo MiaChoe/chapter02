@@ -8,19 +8,19 @@ public class MyMath {
 		//메소드gs: 필드 없음
 		
 		//메소드 일반
-		public int plusInt(int a, int b) {
+		public int plus(int a, int b) {
 			return a+b; //int sum = a+b; 이렇게 굳이 변수 안 만들고 바로 return에 입력	
 		}
 		
-		public double plusDouble(double a, double b) {
+		public double plus(double a, double b) {
 			return a+b;
 		}
 		
-		public double plusDoubleInt(double a, int b) {
+		public double plus(double a, int b) {
 			double sum = a+b;
 			return sum;
 		}
-		public double plusIntDouble(int a, double b) {
+		public double plus(int a, double b) {
 			return a+b;
 		}
 
