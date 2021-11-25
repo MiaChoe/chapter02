@@ -1,4 +1,5 @@
-package com.javaex.ex09;
+package com.javaex.ex09;//2021.11.25(목)10:22수업,totalCount가 공통으로 쓰는 필드임을 명시해줘야 함
+
 
 public class GoodsApp {
 
