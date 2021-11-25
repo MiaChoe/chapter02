@@ -1,6 +1,6 @@
 package com.javaex.ex01;//2021.11.25(목)19:30
 
-public class A_Goods {
+public class _Goods_A {
 	
 		//필드
 		private String name;

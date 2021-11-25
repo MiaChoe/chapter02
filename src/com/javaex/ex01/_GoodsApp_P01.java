@@ -9,7 +9,7 @@ Goods 클래스를 정의하고 GoodsApp 클래스에서  Goods 클래스를 테
      상품이름 : “nikon”,   가격: 400000
   3) 값을 세팅 한 후,  객체의 데이터를 출력해 보세요.
  */
-public class P_GoodsApp01 {
+public class _GoodsApp_P01 {
 
 	public static void main(String[] args) {
 		

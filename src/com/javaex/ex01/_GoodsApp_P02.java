@@ -6,7 +6,7 @@ package com.javaex.ex01;//2021.11.25(목)19:20복습
 상품이름 : “LG그램”,    가격: 900000
 상품이름 : “머그컵”,    가격: 2000
 */
-public class P_GoodsApp02 {
+public class _GoodsApp_P02 {
 
 	public static void main(String[] args) {
 		Goods camera = new Goods();

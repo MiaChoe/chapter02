@@ -6,7 +6,7 @@ package com.javaex.ex01;//2021.11.25(목)19:20복습
 상품이름 : “LG그램”,    가격: 900000
 상품이름 : “머그컵”,    가격: 2000
 */
-public class P_Goods02 {
+public class _Goods_P02 {
 	String name;
 	int price;
 }
