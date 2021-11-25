@@ -1,5 +1,6 @@
-package com.javaex.ex09;//2021.11.25(목)10:22수업,totalCount가 공통으로 쓰는 필드임을 명시해줘야 함
-
+package com.javaex.ex09;//2021.11.25(목)10:22수업,static
+						//메모리에 올라가기도 전에 static쓰인 모든 게 먼저 틀이름이 static에 올라감
+						//메소드 일반 애들도 붙일 수 있음
 
 public class GoodsApp {
 
