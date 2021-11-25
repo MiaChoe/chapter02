@@ -1,4 +1,4 @@
-package com.javaex.ex09;//2021.11.25(목)10:22수업,static
+package com.javaex.ex08;//2021.11.25(목)10:22수업,static
 						//메모리에 올라가기도 전에 static쓰인 모든 게 먼저 틀이름이 static에 올라감
 						//메소드 일반 애들도 붙일 수 있음
 

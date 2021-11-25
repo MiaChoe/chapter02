@@ -1,11 +1,11 @@
-package com.javaex.ex09;//2021.11.25(목)10:22수업,static
+package com.javaex.ex08;//2021.11.25(목)10:22수업,static
 
 public class Goods {
 
 	//핃드
 	private String name;
 	private int price;
-	private static int totalCount;
+	private int totalCount;
 	
 	
 	//셍성자
@@ -40,7 +40,7 @@ public class Goods {
 	}
 	
 	public String getTotalCount() {
-		return totalcount;
+		return totalCount;
 	}
 
 	
