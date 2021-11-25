@@ -38,5 +38,11 @@ public class GoodsApp {
 			count++;
 		}
 		System.out.println(count);
+		
+		//이름만 출력하기
+		for(int i=0; i<goodsArray.lenght; i++) {
+			goodsArray[i].showInfo(););		
+		}
+		
 	}
 }
