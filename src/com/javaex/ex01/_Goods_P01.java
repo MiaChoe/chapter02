@@ -1,4 +1,4 @@
-package com.javaex.ex01;//2021.11.25(목)18:55
+package com.javaex.ex01;//Done//2021.11.25(목)18:55
 						//Sysout main에만 먹힘
 /*
 [문제]

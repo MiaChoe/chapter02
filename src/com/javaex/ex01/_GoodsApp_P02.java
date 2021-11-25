@@ -1,4 +1,4 @@
-package com.javaex.ex01;//2021.11.25(목)19:20복습
+package com.javaex.ex01;//Done//2021.11.25(목)19:20복습
 /*
 [문제]
 다음의 데이터를 추가한 후, 출력해 보세요
@@ -6,6 +6,8 @@ package com.javaex.ex01;//2021.11.25(목)19:20복습
 상품이름 : “LG그램”,    가격: 900000
 상품이름 : “머그컵”,    가격: 2000
 */
+
+
 public class _GoodsApp_P02 {
 
 	public static void main(String[] args) {
