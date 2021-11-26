@@ -1,4 +1,5 @@
-package com.javaex.ex11;//2021.11.26(금)10:47수업-14:30: 필드값을 직접읽는this.name과 메소드값을 읽는getName
+package com.javaex.ex11;//2021.11.26(금)10:47수업-14:30: 
+				//필드값을 직접읽는this.name과 메소드값을 읽는getName
 /*
 [문제]
 Person 클래스를 만드세요.
@@ -20,15 +21,17 @@ public class Person {
 	private int age;
 	
 	//생성자
+	public Person() {
+		System.out.println("Person()");
+	}
+	
 	public Person(String name, int age) {
-		this.name = name;
+		this.name = name; //부모쪽에 있는 건 super.name 이렇게 진행됨
 		this.age = age;
+		System.out.println("Person(2)");
 	}
 	
-	public Person() {	
-	}
 	
-
 	//메소드:getter,setter
 	
 	public String getName() {
@@ -63,9 +66,7 @@ public class Person {
 	//메소드:일반
 	@Override
 	public String toString() {
-		return "Person [name=" + name + ", age=" + age + ", getName()=" + getName() + ", getAge()=" + getAge()
-				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
-				+ "]";
+		return "Person [name=" + name + ", age=" + age + "]";
 	}
 	
 	public void showInfo()	{
@@ -76,8 +77,10 @@ public class Person {
 		
 		System.out.println("====================");
 		System.out.println("");
-		
 	}
+
+	
+}
 	
 	
 }

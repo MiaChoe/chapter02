@@ -23,12 +23,34 @@ public class Student extends Person{
 	
 	//생성자
 	public Student() {
+		//super();
+		System.out.println("Student()");
 	}
 	
-	public Student(String schoolName){
+	public Student(String schoolName) {
+		//super();
 		this.schoolName = schoolName;
+		System.out.println("Student(1)");
 	}
 	
+	//부모 생성자 실행 <=있어야 함
+	public Student(String name, int age, String schoolName) {
+		/*
+		super(name, age);
+		super.setName(name);
+		super.setAge(age);
+		*/
+		/*super써도 안 되는 건 private부모라서
+		super.name = name;
+		super.age = age;
+		*/
+		super();
+		super.name = name;
+		super.age = age;
+		
+		this.schoolName = schoolName;
+		System.out.println("Student(3)");
+	}
 	
 	//메소드:getter,setter
 	public String getSchoolName() {
@@ -45,6 +67,17 @@ public class Student extends Person{
 		return "Student [schoolName=" + schoolName + "]";
 	}
 	
+	public void showInfo2() {
+		
+		System.out.println("*************");
+		System.out.println("이름: " + super.name);
+		System.out.println("나이" + super.age);
+		System.out.println("학교" + this.schoolName);
+		System.out.println("*************");
+		System.out.println("");
+		
+		
+	}
 	
 	
 	
