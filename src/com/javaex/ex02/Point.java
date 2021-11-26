@@ -1,6 +1,7 @@
 package com.javaex.ex02;//2021.11.21(화)09:56수업
 						//2021.11.24(수)13:53, boolean넣은 draw
 						//2021.11.26(금)00:47수정
+						//2021.11.26(금)22:45녹화 들으며 수정: draw이해, this.수업듣기
 /*
 [문제]
 Point 클래스를 만드세요
@@ -10,6 +11,53 @@ Point 클래스를 만드세요
  */
 
 
+public class Point {
+	
+	//필드
+	private int x; //3
+	private int y; //6
+	
+	
+	//생성자
+		
+	//메소드: 메소드를 통해 불러올 거야, draw가 있어서 막혀있어
+	public void setX(int x) { 
+		this.x = x;
+	}
+	
+	public int getX() {
+		return x;
+	}
+	
+	public void setY(int y) {
+		this.y = y;
+	}
+	
+	public int getY() {
+		return y;
+	}
+	
+	public void draw() {//자기자신의 필드값을 읽을 거니까 줄 필요 없어, 갖고 있는 거니까.
+		System.out.println("점[x=" + x + ", y=" + y +"]을 그렸습니다.");
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 public class Point {
 
 	//필드
@@ -22,7 +70,7 @@ public class Point {
 		System.out.println("Point()실행");
 	}
 	*/
-	
+/*	
 	public Point(int x, String name) {
 		//해당클래스를 메모리에 올리는 일
 		this.x = x;
@@ -96,3 +144,4 @@ public class Point {
 	}
 	
 }
+*/
