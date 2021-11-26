@@ -1,35 +1,35 @@
 package com.javaex.ex02;
 
-public class _Point_A {
+public class Point {
 	
 	//필드
 	private int x;
 	private int y;
 
 	//생성자
-	public _Point_A() {
+	public Point() {
 		//해당클래스를 메모리에 올리는 일
-		System.out.println("__Point_A_A()");
+		System.out.println("Point()");
 	}
 
-	public _Point_A(int x) {
+	public Point(int x) {
 		//해당클래스를 메모리에 올리는 일
 		this.x = x;
-		System.out.println("__Point_A_A(1)");
+		System.out.println("Point(1)");
 	}
 	
 	/*
-	public __Point_A_A(int y) {
+	public Point(int y) {
 		//해당클래스를 메모리에 올리는 일
 		this.y = y;
 	}
 	*/
 	
-	public _Point_A(int x, int y) {
+	public Point(int x, int y) {
 		//해당클래스를 메모리에 올리는 일
 		this.x = x;
 		this.y = y;
-		System.out.println("__Point_A_A(2)");
+		System.out.println("Point(2)");
 	}
 
 	
@@ -79,9 +79,10 @@ public class _Point_A {
 
 	@Override
 	public String toString() {
-		return "__Point_A_A [x=" + x + ", y=" + y + "]";
+		return "Point [x=" + x + ", y=" + y + "]";
 	}
 
 	
 	
+}
 }
