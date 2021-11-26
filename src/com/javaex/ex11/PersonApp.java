@@ -1,4 +1,4 @@
-package com.javaex.ex11;//2021.11.26(금)10:47수업
+package com.javaex.ex11;//2021.11.26(금)10:47-12:20수업
 /*
 [문제]
 Person 클래스를 만드세요.
@@ -35,6 +35,12 @@ public class PersonApp {
 		p01.showInfo();
 		p02.showInfo();
 		
+		//System.out.println(p02.getAge());
+		
+		Student s01 = new Student();
+		s01.setSchoolName("서울고등학교");
+		
+		System.out.println(s01.toString());
 		
 	}
 

@@ -1,4 +1,4 @@
-package com.javaex.ex11;//2021.11.26(금)10:47수업
+package com.javaex.ex11;//2021.11.26(금)10:47수업-14:30: 필드값을 직접읽는this.name과 메소드값을 읽는getName
 /*
 [문제]
 Person 클래스를 만드세요.
@@ -37,9 +37,23 @@ public class Person {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
 	public int getAge() {
 		return age;
 	}
+	
+	/*
+	//만일 이정재나이에 음수를 넣었다면 이렇게getAge를 통해 음수 넣었을 시 1이 되게 중대한 실수는 막아줄 수 있음
+	public int getAge() {
+		if(age<1) {
+			return 1;}
+		else {
+		return age;
+		}
+	}
+	
+	*/
+	
 	public void setAge(int age) {
 		this.age = age;
 	}
@@ -57,7 +71,7 @@ public class Person {
 	public void showInfo()	{
 		//name, this.name, getName(), this.getName()
 		System.out.println("====================");
-		System.out.println("이름: " + this.name); 
+		System.out.println("이름: " + this.getName()); //this.name/getName/this.getName도 돼
 		System.out.println("나이: " + this.age);
 		
 		System.out.println("====================");
