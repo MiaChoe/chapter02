@@ -1,4 +1,4 @@
-/* 2021.11.27(토)10:49
+/*Done//2021.11.27(토)10:49
 [문제]
 PointApp 클래스 만드세요
 	1) draw() 메소드를 호출하여 다음과 같이 출력하세요
@@ -11,6 +11,15 @@ public class _PointApp_P01 {
 
 	public static void main(String[] args) {
 		
+		Point p01 = new Point();
+		p01.setX(5);
+		p01.setY(5);
+		p01.draw();
+		
+		Point p02 = new Point();
+		p02.setX(10);
+		p02.setY(23);
+		p02.draw();
 	}
 
 }
