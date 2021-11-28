@@ -1,4 +1,6 @@
-package com.javaex.ex05;//2021.11.24(수)10:17수업 중 어제자 과제 확인
+//2021.11.28(일)14:38, 
+//2021.11.24(수)10:17수업 중 어제자 과제 확인
+
 /*
  [문제]
 Song 클래스를 만드세요 Song 클래스는 다음과 같은 필드를 가지고 있습니다.
@@ -12,6 +14,7 @@ Song 클래스를 만드세요 Song 클래스는 다음과 같은 필드를 가
 2)노래정보를 출력하는 showInfo()메소드를 작성하세요.
  */
 
+package com.javaex.ex05;
 
 public class Song {
 
@@ -21,7 +24,7 @@ public class Song {
 	private String album;
 	private String compser;
 	private String year;
-	private int track;
+	
 	
 	//(디폴트)생성자
 	public Song() {
@@ -115,12 +118,24 @@ public class Song {
 	public void setTrack(int track) {
 		this.track = track;
 	}
-	
-
 
 
 	//메소드-일반
 	@Override
 	public String toString() {
 		return "Song [title=" + title + ", artist=" + artist + ", album=" + album + ", compser=" + compser + ", year="
-				+ year + ", track=" + track + "]";
+				+ year + ", track=" + track + "]";			
+				
+	public void showInfo() {
+		System.out.println(artist + ", " + title + " (" +
+	album + ", " + track + "번 track, " + composer +" 작곡");
+		
+		
+	}
+		
+		
+		
+		
+		
+				
+				

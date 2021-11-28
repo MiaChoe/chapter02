@@ -1,5 +1,13 @@
-package com.javaex.ex05;//2021.11.24(수)11:11수업,어제자 과제 확인하면서 오늘자 this()진도. 너무 어려우면 얘는 패스하시라
+//2021.11.28(일)14:38영상 보며 복습
+//2021.11.24(수)11:11수업,어제자 과제 확인하면서 오늘자 this()진도. 너무 어려우면 얘는 패스하시라
 
+/*
+[문제]
+SongApp 클래스 만드세요
+1) showInfo() 메소드를 호출하여 다음과 같이 출력하세요 
+ */
+
+package com.javaex.ex05;
 public class SongApp {
 	public static void main(String[] args) {
 		
@@ -14,7 +22,7 @@ public class SongApp {
 		System.out.println(s01.toString());
 		
 		
-		//5개는 생성자로 초기화하고, 트랙번호는 setter로 초기화
+		//5개는 생성자로 초기화하고, 트랙번호는 setter로 초기화-2021.11.28(일)에 이해
 		//(=마지막 매개변수는 정해지지 않아서 정해진 다섯 개만 넣고 마지막 것은 미정이라 적지 않았다고 가정해보자)
 		Song s02 = new Song("거짓말", "BIGBANG", "Always", "G-Dragon", "2007");
 		s02.setTrack(2); //옆과 같이 추가사항처럼 따로 기입
