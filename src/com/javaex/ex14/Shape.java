@@ -4,7 +4,7 @@ package com.javaex.ex14;
 
 public class Shape {
 	//필드
-	protected String lineColor;
+	protected String lineColor; 
 	protected String fillColor;
 	
 	

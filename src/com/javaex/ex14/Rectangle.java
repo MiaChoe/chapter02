@@ -42,13 +42,14 @@ public class Rectangle extends Shape {
 	}
 
 	//toString은 부모쪽에도 있다, 부모쪽 메소드 사용 모샇게 하려고 같은 이름으로 "재정의"
-	@Override
 	public String toString() {
 		return "Rectangle [width=" + width + ", height=" + height + ", lineColor()=" + getLineColor()
 				+ ", getFillColor()=" + fillColor + "]";
 	}
 
-
+	public void draw() {
+		System.out.println("선색:" + super.lineColor + " 면색:" + super.fillColor + " 가로" + this.width + " 세로:" + this.height + "인 사각형을 그렸습니다.");
+	}
 	
 
 

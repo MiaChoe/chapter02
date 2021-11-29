@@ -1,27 +1,23 @@
-//2021.11.29(월)12:14수업
+//2021.11.29(월)16:18수업
 
-package com.javaex.ex13;
+package com.javaex.ex14;
 
-public class Circle {
+public class Circle extends Shape {
 	//필드
 	private String lineColor;
 	private String fillColor;
 	private int radius;
-
 	
 	//생성자
-	public Circle() {	
+	public Circle() {
+		super();
 	}
 	
 	public Circle(String lineColor, String fillColor, int radius) {
-	super();
-	this.lineColor = lineColor;
-	this.fillColor = fillColor;
-	this.radius = radius;
+		super(lineColor, fillColor);
+		this.radius = radius;
 	}
 
-	
-	
 	//메소드gs
 	public String getLineColor() {
 		return lineColor;
@@ -47,17 +43,15 @@ public class Circle {
 		this.radius = radius;
 	}
 
-	
-	
-	//메소드 일반
+	//메소드일반
 	@Override
 	public String toString() {
-		return "Circle [lineColor=" + lineColor + ", fillColor=" + fillColor + ", radius=" + radius + "]";
+		return "Circle [lineColor=" + lineColor + ", fillColor=" + fillColor + ", radius=" + radius
+				+ ", getLineColor()=" + getLineColor() + ", getFillColor()=" + getFillColor() + ", getRadius()="
+				+ getRadius() + "]";
 	}
 	
-	public void draw() {
-		System.out.println("선색:" + lineColor + " 면색:" + fillColor + " 반지름:" + radius + "인 원을 그렸습니다.");
-	}
 	
 	
+
 }
