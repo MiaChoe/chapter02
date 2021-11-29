@@ -1,4 +1,4 @@
-//2021.11.28(일)14:38, 
+//2021.11.28(일)14:38-18:20- /
 //2021.11.24(수)10:17수업 중 어제자 과제 확인
 
 /*
@@ -22,8 +22,9 @@ public class Song {
 	private String title;
 	private String artist;
 	private String album;
-	private String compser;
+	private String composer;
 	private String year;
+	private int track;
 	
 	
 	//(디폴트)생성자
@@ -32,30 +33,30 @@ public class Song {
 		System.out.println("Song(0)");
 	}
 	
-	public Song(String title, String artist, String album, String compser) {
-		this(title, artist, album, composer, ""); //맨 마지막 track자리에 공백을 주는 경우
+	public Song(String title, String artist, String album, String composer) {
+		this(title, artist, album, composer); //맨 마지막 track자리에 공백을 주는 경우
 		System.out.println("Song(4)");
 	}
 	
 	
 
-	public Song(String title, String artist, String album, String compser, String year) {
-		super();
+	public Song(String title, String artist, String album, String composer, String year) {
+		
+		this(title, artist, album, composer, year);
 		this.title = title;
 		this.artist = artist;
 		this.album = album;
-		
-		//작곡가:작곡가 이름이 최대10글자까지만 입력 (코드100줄)
-		this.compser = compser;
-		
-		//년도: 올해(2021년)이후 년도가 들어오면 2021년으로 처리
-		this.year = year;
+		this.composer = composer;//작곡가:작곡가 이름이 최대10글자까지만 입력 (코드100줄)
+		this.year = year;//년도: 올해(2021년)이후 년도가 들어오면 2021년으로 처리
 		System.out.println("Song(5)");
+		
+		this.track = track;
+		System.out.println("Song(6)");
 	}
 	
 	/*
-	//Generator using Fiels통해서 바로 생성, 6개 필드값 모두 초기화하는 생성자 버스커버스커 위해 새로 추가함
-	public Song(String title, String artist, String album, String compser, String year, int track) {
+	//Generator using Fields통해서 바로 생성, 6개 필드값 모두 초기화하는 생성자 버스커버스커 위해 새로 추가함
+	public Song(String title, String artist, String album, String composer, String year, int track) {
 		super();
 		this.title = title;
 		this.artist = artist;
@@ -95,12 +96,12 @@ public class Song {
 		this.album = album;
 	}
 
-	public String getCompser() {
-		return compser;
+	public String getComposer() {
+		return composer;
 	}
 
-	public void setCompser(String compser) {
-		this.compser = compser;
+	public void setCompser(String composer) {
+		this.composer = composer;
 	}
 
 	public String getYear() {
@@ -123,15 +124,18 @@ public class Song {
 	//메소드-일반
 	@Override
 	public String toString() {
-		return "Song [title=" + title + ", artist=" + artist + ", album=" + album + ", compser=" + compser + ", year="
-				+ year + ", track=" + track + "]";			
+		return "Song [title=" + title + ", artist=" + artist + ", album=" + album + ", composer=" + compser + ", year="
+				+ year + ", track=" + track + "]";
+	}
 				
 	public void showInfo() {
 		System.out.println(artist + ", " + title + " (" +
 	album + ", " + track + "번 track, " + composer +" 작곡");
-		
-		
 	}
+	
+	}
+		
+
 		
 		
 		
