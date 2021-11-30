@@ -1,23 +1,24 @@
-//2021.11.29(월)14:44수업,
+//2021.11.30(화)14:50 오버라이딩
 
-package com.javaex.ex14;
+package com.javaex.ex15;
 
 public class Shape {
-	//필드
-	protected String lineColor; 
-	protected String fillColor;
+	private String lineColor;
+	private String fillColor;
 	
 	
 	//생성자
-	public Shape() {		
+	public Shape(){
 	}
-	
+		
 	public Shape(String lineColor, String fillColor) {
+		super();
 		this.lineColor = lineColor;
 		this.fillColor = fillColor;
 	}
-
-	//메소드gs
+	
+	
+	//메소드 gs
 	public String getLineColor() {
 		return lineColor;
 	}
@@ -33,13 +34,10 @@ public class Shape {
 	public void setFillColor(String fillColor) {
 		this.fillColor = fillColor;
 	}
-
-		
-	//메소드일반
-	@Override
-	public String toString() {
-		return "Shape [lineColor=" + lineColor + ", fillColor=" + fillColor + "]";
-	}	
 	
+	//메소드 일반
+	public void draw() {
+		System.out.println("선색: " + lineColor + ",  면색:" + fillColor + "인 도형을 그렸습니다.");
+	}
 	
 }
