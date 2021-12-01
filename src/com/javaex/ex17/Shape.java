@@ -39,5 +39,9 @@ public class Shape {
 	public void draw() {
 		System.out.println("선색: " + lineColor + ",  면색:" + fillColor + "인 도형을 그렸습니다.");
 	}
+	
+	public double area() {
+		return 0.10;//아무거나 넣어도 돼
+	}
 
 }
