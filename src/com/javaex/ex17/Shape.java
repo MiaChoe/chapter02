@@ -1,6 +1,6 @@
-//2021.11.30(화)14:50 오버라이딩
+//2021.12.1(수)10:46(수)수업
 
-package com.javaex.ex15;
+package com.javaex.ex17;
 
 public class Shape {
 	private String lineColor;
