@@ -4,8 +4,7 @@ package com.javaex.ex18;
 
 public abstract class Shape {  //추상메소드를 가지고 있어서 클래스와 미완성이 부분이 있음 area()
 	                           //Shape 단독으로 인스턴스화 하면 안됨
-	                            
-	
+
 	//필드
 	protected String lineColor;
 	protected String fillColor;
