@@ -1,8 +1,8 @@
-//2021.12.1(수)10:46(수)수업
+//2021.12.1(수)15:16인터페이스
 
-package com.javaex.ex17;
+package com.javaex.ex18;
 
-public class Triangle extends Shape {
+public class Triangle extends Shape implements Drawable {
 
 	// 필드
 	private String lineColor;
@@ -60,8 +60,8 @@ public class Triangle extends Shape {
 				+ height + "]";
 	}
 
-	public void draw() {
-		System.out.println("선색:" + lineColor + " 면색:" + fillColor + " 가로:" + width + " 세로:" + height + "인 삼각형입니다.");
+	public void draw() {//인터페이스의 메소드를 구현
+		System.out.println("선색:" + lineColor + " 면색:" + fillColor + " 가로:" + width + " 세로:" + height + "인 삼각형을 그렸습니다.");
 	}
 
 	public double area() {

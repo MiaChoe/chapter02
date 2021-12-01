@@ -1,8 +1,8 @@
-//2021.12.1(수)10:58
+//2021.12.1(수)15:16인터페이스
 
-package com.javaex.ex17;
+package com.javaex.ex18;
 
-public class Rectangle extends Shape {
+public class Rectangle extends Shape implements Drawable {
 	//필드. 단, 앞 둘은 부모의 것을 	
 	private int width;
 	private int height;

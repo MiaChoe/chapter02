@@ -1,8 +1,8 @@
-//2021.12.1(수)10:57
+//2021.12.1(수)15:16인터페이스
 
-package com.javaex.ex17;
+package com.javaex.ex18;
 
-public class Circle extends Shape {
+public class Circle extends Shape implements Drawable {
 	//필드
 	private String lineColor;
 	private String fillColor;
@@ -44,11 +44,8 @@ public class Circle extends Shape {
 	}
 
 	//메소드일반
-	@Override
-	public String toString() {
-		return "Circle [lineColor=" + lineColor + ", fillColor=" + fillColor + ", radius=" + radius
-				+ ", getLineColor()=" + getLineColor() + ", getFillColor()=" + getFillColor() + ", getRadius()="
-				+ getRadius() + "]";
+	
+	public void draw() {	
 	}
 	
 	public double area() {
