@@ -2,23 +2,25 @@
 
 package com.javaex.ex18;
 
-public class Shape {//추상메소드를 가지고 있어서 클래스와 미완성 부분이 있음 area(
-	private String lineColor;//shape단독으로 인스턴스화하면 안됨
-	private String fillColor;
+public abstract class Shape {  //추상메소드를 가지고 있어서 클래스와 미완성이 부분이 있음 area()
+	                           //Shape 단독으로 인스턴스화 하면 안됨
+	                            
 	
+	//필드
+	protected String lineColor;
+	protected String fillColor;
 	
+
 	//생성자
-	public Shape(){
+	public Shape() {
 	}
-		
+
 	public Shape(String lineColor, String fillColor) {
-		super();
 		this.lineColor = lineColor;
 		this.fillColor = fillColor;
 	}
-	
-	
-	//메소드 gs
+
+	//메소드 g/s
 	public String getLineColor() {
 		return lineColor;
 	}
@@ -34,17 +36,22 @@ public class Shape {//추상메소드를 가지고 있어서 클래스와 미완
 	public void setFillColor(String fillColor) {
 		this.fillColor = fillColor;
 	}
-	
-	
-	/*Drawable이 있으니 막자
+
 	//메소드 일반
+	@Override
+	public String toString() {
+		return "Shape [lineColor=" + lineColor + ", fillColor=" + fillColor + "]";
+	}
+
+	/*
+	//자식 클래스가 draw() 반드시 만들지 않아도 됨 <--> 비교해볼것
 	public void draw() {
-		System.out.println("선색: " + lineColor + ",  면색:" + fillColor + "인 도형을 그렸습니다.");
+		System.out.println("선색: " + lineColor + " 면색:" + fillColor + " 도형을 그렸습니다.");
 	}
 	*/
 	
-	public double area() {//자식클래스에서는 꼭 내부코드를 구현해야 함
-		return 0.10;//아무거나 넣어도 돼. 내부 코드를 작성할 수 없는 상황이다
-	}
-
+	//area() 만들지 못함
+	public abstract double area();  //추상메소드  
+	                                //내부코드를 작성할 수없는상황
+	                                //자식클래스에서는 꼭 내부코드를 구현해야함     
 }

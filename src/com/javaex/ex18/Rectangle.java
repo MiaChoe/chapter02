@@ -3,24 +3,27 @@
 package com.javaex.ex18;
 
 public class Rectangle extends Shape implements Drawable {
-	//필드. 단, 앞 둘은 부모의 것을 	
+
+	// 필드
+	// private String lineColor;
+	// private String fillColor;
+
 	private int width;
 	private int height;
-	
-	//생성자
-	public Rectangle() {
-		
-	} //Shape: 기본 생성자
 
-	
-	//부모를 고려해서 생성자를 만든다
-	public Rectangle(String lineColor, String fillColor ,int width, int height) {
+	// 생성자
+	public Rectangle() {
+		super(); // Shape 기본생성자 Shape();
+	}
+
+	/* 부모를 고려해서 생성자를 만든다 */
+	public Rectangle(String lineColor, String fillColor, int width, int height) {
 		super(lineColor, fillColor);
 		this.width = width;
 		this.height = height;
 	}
 
-	//메소드 gs
+	// 메소드 g/s
 	public int getWidth() {
 		return width;
 	}
@@ -37,24 +40,23 @@ public class Rectangle extends Shape implements Drawable {
 		this.height = height;
 	}
 
-	//toString은 부모쪽에도 있다, 부모쪽 메소드 사용 모샇게 하려고 같은 이름으로 "재정의"
-	
-	@Override
+	// 메소드 일반
+	// 부모쪽에도 같은 메소드가 있다
+	// 부모쪽의 메소드 사용 못하게 할려고 같은 이름으로 "재정의"
 	public String toString() {
-		return "Rectangle [width=" + width + ", height=" + height + ", getWidth()=" + getWidth() + ", getHeight()="
-				+ getHeight() + ", getLineColor()=" + getLineColor() + ", getFillColor()=" + getFillColor()
-				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
-				+ "]";
+		return "Rectangle [width=" + width + ", height=" + height + ", lineColor=" + lineColor + ", fillColor="
+				+ fillColor + "]";
 	}
 
-	//2021.11.30(화)15:50 상속받은 거 의미 살리려면, 부모의 필드가private니까 그냥 fillColor말고 getFilColor로
-	public void draw() {
-		System.out.println("선색:" + getLineColor() + " 면색:" + getFillColor() + " 가로" + this.width + " 세로:" + this.height + "인 사각형을 그렸습니다.");
+	public void draw() { //인터페이스의 메소드 구현
+		System.out.println("선색:" + super.lineColor + " 면색:" + super.fillColor + " 가로:" + this.width + " 세로:"
+				+ this.height + " 사각형을 그렸습니다.");
 	}
 	
-	public double area() {
-		double result = width*height;
+	public double area() { //Shape 추상클래스(미완성 클래스)를 상속받았음
+		                   //Shape 를 상속 받을며년 미완성인부분을 구현해줘야함 --> area() 작성해야함
+		double result = width * height;
 		return result;
 	}
-}	
-	
+
+}
