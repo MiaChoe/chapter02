@@ -52,8 +52,8 @@ public class Rectangle extends Shape {
 		System.out.println("선색:" + getLineColor() + " 면색:" + getFillColor() + " 가로" + this.width + " 세로:" + this.height + "인 사각형을 그렸습니다.");
 	}
 	
-	public int area() {
-		int result = width*height;
+	public double area() {
+		double result = width*height;
 		return result;
 	}
 }	
