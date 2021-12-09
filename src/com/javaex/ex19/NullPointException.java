@@ -32,9 +32,4 @@ public class NullPointException {
 				
 		System.out.println(str.toString());		
 	
-		
-	}
-	
-}
-
-*/
+		 */
