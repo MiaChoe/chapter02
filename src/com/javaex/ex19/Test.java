@@ -1,6 +1,6 @@
 //2021.12.9(목)22:43 <이것이 자바이다!> 예제 공부
 
-package com.javaex.ex20;
+package com.javaex.ex19;
 
 public class Test {
 
