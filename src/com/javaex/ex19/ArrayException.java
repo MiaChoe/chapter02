@@ -9,7 +9,7 @@ public class ArrayException {
 		
 		try {
 			System.out.println(intArray[3]);
-		}catch (ArrayIndexOutOfBoundsException error) {//이처럼 문제점이 여럿일 경우를 대비하여 catch를 여러번 쓸 수 있음
+		}catch (ArrayIndexOutOfBoundsException error) {//이처럼 문제점이 여럿일 경우를 대비하면 이렇게 해주세요=catch영역. catch를 여러번 쓸 수 있음
 			System.out.println(error.toString());
 		}catch (ArithmeticException error) {
 			System.out.println(error.toString());
