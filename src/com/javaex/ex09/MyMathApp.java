@@ -1,17 +1,24 @@
-package com.javaex.ex09;//2021.11.25(목)11:49수업,메소드 오버로딩
-						//2021.11.25(목)14:18수업, 
-						//매개변수가 double인지 int인지 파악해서 일일이 plusDouInt인지 plusD인지 구분하기 싫을 때,
-						//같은 이름의 메소드가 다 사용할 수 있게 해주는 기능 = method overloading
+//2021.11.25(목)11:49수업, 14:18수업_Constructor Overloading//Done/2021.12.14(화)22:07
+
+package com.javaex.ex09;
 
 public class MyMathApp {
-	//필드: 필요 없음
 	
-	//생성자: 디폴트생성자 사용
-			
-	//메소드gs: 필드 없음
-			
-	//메소드 일반
+	// 필드: 필요 없음
+
+
+	// 생성자: 디폴트생성자 사용 
+	
+
+
+	// 메소드gs: 필드 없음
+
+
+	// 메소드 일반
 	public static void main(String[] args) {
+		
+		MyMath myMath = new MyMath();
+		
 		double sum01 = MyMath.plus(3, 6);
 		System.out.println(sum01);
 		
@@ -23,11 +30,16 @@ public class MyMathApp {
 		
 		double sum04 = MyMath.plus(20, 99.9);
 		System.out.println(sum04);
+	}
+	
+}	
+	
+		/*
+		MyMath클래스를 메모리에 올리고 그 안에 있는 plus.Method를 쓰려고 이 클래슬 만듦
 		
-		//MyMath클래스를 메모리에 올리고 그 안에 있는 plus.Method를 쓰려고 이 클래슬 만듦
-		
-		MyMath myMath = new MyMath(); //디폴트 생성자 생길 거 알고 생성자 안 만든 거야
-		
+		디폴트 생성자 생길 거 알고 생성자 안 만든 거야
+		  
+		*/
 		
 		
 		/*
@@ -56,7 +68,8 @@ public class MyMathApp {
 		double sum04 = myMath.plusIntDouble(20, 99.9);
 		System.out.println(sum04);
 		*/
-		*/
-	}
-
-}
+		
+/*
+ * 매개변수가 double인지 int인지 파악해서 일일이 plusDouInt인지 plusD인지 구분하기 싫을 때, 같은 이름의 메소드가 다
+ * 사용할 수 있게 해주는 기능 = method overloading
+ */
