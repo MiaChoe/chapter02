@@ -1,4 +1,4 @@
-//2021.11.25(목)11:49수업,Constructor Overloading, static & final & constant//Done/2021.12.14(화)22:07
+//2021.11.25(목)11:49수업,StaticMethod();, static & final & constant//Done/2021.12.14(화)22:07
 
 package com.javaex.ex09;
 
