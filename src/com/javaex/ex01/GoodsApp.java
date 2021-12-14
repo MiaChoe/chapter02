@@ -32,7 +32,7 @@ public class GoodsApp {
 		 * Goods computer = new Goods();//붕어빵 틀 찍고 다시 하드디스크로 틀은 돌아간 상황. 그런데 이러면 아무도 접근하지
 		 * 못함. 그래서 대입할 곳 변수와 자료형 적자 computer.name = "LG 그램"; computer.price = 900000;
 		 * 
-		 * Goods cup = new Goods(); cup.name = "Mug Cup"; cup.price = 2000;
+		 * Goods cup = new Goods(); cup.name = "머그 Cup"; cup.price = 2000;
 		 * 
 		 * System.out.println(camera.name); System.out.println(camera.price);
 		 * 
