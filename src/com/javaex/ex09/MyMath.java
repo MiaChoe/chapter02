@@ -1,11 +1,11 @@
-//2021.11.25(목)11:49수업,StaticMethod();, static & final & constant//Done/2021.12.14(화)22:07
+//2021.11.25(목)11:49수업,StaticMethod();, static & final & constant//Done/2021.12.14(화)22:22 staticField·Method, finalField, staticFinal(≒constant)
 
 package com.javaex.ex09;
 
 public class MyMath {
 
 	// 필드: 필요 없음
-	private static double PI = 3.14; // static이나 final로 정한 애들은 capital letters
+	private static double PI = 3.14; // static이나 final로 정한 애들은 대문자로
 
 	// 생성자: 디폴트생성자 사용
 

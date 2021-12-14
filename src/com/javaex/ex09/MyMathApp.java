@@ -1,4 +1,4 @@
-//2021.11.25(목)11:49수업, 14:18수업_StaticMethod()//Done/2021.12.14(화)22:07
+//2021.11.25(목)11:49수업, 14:18수업_StaticMethod()//Done/2021.12.14(화)22:22 staticField·Method, finalField, staticFinal(≒constant)
 
 package com.javaex.ex09;
 
@@ -6,13 +6,9 @@ public class MyMathApp {
 	
 	// 필드: 필요 없음
 
-
 	// 생성자: 디폴트생성자 사용 
-	
-
 
 	// 메소드gs: 필드 없음
-
 
 	// 메소드 일반
 	public static void main(String[] args) {
@@ -33,7 +29,6 @@ public class MyMathApp {
 	}
 	
 }	
-	
 		/*
 		MyMath클래스를 메모리에 올리고 그 안에 있는 plus.Method를 쓰려고 이 클래슬 만듦
 		
