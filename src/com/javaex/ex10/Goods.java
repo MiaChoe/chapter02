@@ -1,4 +1,4 @@
-//Undone//2021.11.25(목)수업_Array적용/2021.12.14(화)17:58/2021.12.15(수)06:05
+//2021.11.25(목)수업_Array적용/2021.12.14(화)17:58/Done_2021.12.15(수)06:05 instances belonging to an ArrayList
 
 package com.javaex.ex10;
 
