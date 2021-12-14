@@ -1,4 +1,4 @@
-//2021.11.28(일)14:38영상 보며 복습/2021.11.24(수)11:11수업,어제자 과제 확인하면서 오늘자 this()진도/Done_2021.12.15(수)01:56 ConstructorOverloading, this()(≒ Car(String model, int Speed)
+//2021.11.28(일)14:38영상 보며 복습/2021.11.24(수)11:11수업 어제자 과제 확인하면서 오늘자 this()진도/Done_2021.12.15(수)01:56 ConstructorOverloading, this()(≒ Car(String model, int Speed)
 
 package com.javaex.ex05;
 
