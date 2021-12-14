@@ -1,10 +1,9 @@
-//Done//2021.11.24(수)14:42_3.클래스의 정의 중 메소드오버로딩/2021.12.14(화)17:11_minipro 설명하시다가 나온 예시라 복습. Undone이었음.
+//Done/2021.11.24(수)14:42_3.클래스의 정의 중 메소드오버로딩/2021.12.14(화)17:11_minipro 설명하시다가 나온 예시라 복습/2021.12.14(화)22:30
 
 package com.javaex.ex06;
 
 public class Math {
 
-	// 생성자
 	public int plus(int num01, int num02) {
 		int sum = num01 + num02;
 		return sum;
