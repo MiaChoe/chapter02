@@ -1,19 +1,24 @@
+//Undone//2021.11.25(목)수업_Array적용/2021.12.14(화)17:58/2021.12.15(수)06:05
+
 package com.javaex.ex10;
 
 public class Goods {
+
+	// 필드
 	private String name;
 	private int price;
 
-	//생성자
-	public Goods(String name, int price) {
-	//메모리에 올리는 작업
-	this.name = name;
-	this.price = price;
-	System.out.println("Goods(String name, int price)");
+	// 생성자
+	public Goods() {
 	}
-	
-	//메소드gs
 
+	public Goods(String name, int price) {
+		this.name = name;
+		this.price = price;
+		//System.out.println("Goods(String name, int price)");
+	}
+
+	// 메소드 gs
 	public String getName() {
 		return name;
 	}
@@ -29,9 +34,8 @@ public class Goods {
 	public void setPrice(int price) {
 		this.price = price;
 	}
-	
-	
-	//메소드 일반
+
+	// 메소드 일반
 	@Override
 	public String toString() {
 		return "Goods [name=" + name + ", price=" + price + "]";
@@ -43,6 +47,4 @@ public class Goods {
 		System.out.println("");
 	}
 
-
-	
 }
