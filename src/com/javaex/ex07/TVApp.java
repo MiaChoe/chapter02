@@ -9,7 +9,7 @@ public class TVApp {
 		tv.status();
 
 		tv.power(true);
-		tv.volume(120); //100으로 유지
+		tv.volume(120); // 100으로 유지
 		tv.status();
 
 		tv.volume(false);

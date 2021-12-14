@@ -41,7 +41,7 @@ public class TV {
 		return power;
 	}
 
-	// 메소드 -일반
+	// 메소드 일반
 	public void power(boolean on) {
 		this.power = on;
 	}
