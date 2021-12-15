@@ -1,15 +1,16 @@
-//2021.11.29(월)13:53수업
+//Done_2021.11.29(월)13:53수업, Done_2021.12.16(목)07:58
 
 package com.javaex.ex13;
+
 public class Triangle {
-	//필드
+	// 필드
 	private String lineColor;
 	private String fillColor;
 	private int width;
 	private int height;
-	
-	//생성자
-	public Triangle() {		
+
+	// 생성자
+	public Triangle() {
 	}
 
 	public Triangle(String lineColor, String fillColor, int width, int height) {
@@ -20,7 +21,7 @@ public class Triangle {
 		this.height = height;
 	}
 
-	//메소드gs
+	// 메소드gs
 	public String getLineColor() {
 		return lineColor;
 	}
@@ -53,17 +54,15 @@ public class Triangle {
 		this.height = height;
 	}
 
-	
-	//메소드 일반
+	// 메소드 일반
 	@Override
 	public String toString() {
 		return "Triangle [lineColor=" + lineColor + ", fillColor=" + fillColor + ", width=" + width + ", height="
 				+ height + "]";
 	}
-		
+
 	public void draw() {
 		System.out.println("선색:" + lineColor + " 면색:" + fillColor + " 가로:" + width + " 세로:" + height + "인 삼각형을 그렸습니다.");
 	}
-	
-	
+
 }
