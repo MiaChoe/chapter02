@@ -1,4 +1,4 @@
-//2021.12.15(수)08:21
+//2021.12.15(수)08:21,Undone/14:52
 
 package com.javaex.ex12;
 
@@ -39,8 +39,8 @@ public class Point {
 	// 메소드 일반
 	void showInfo() {
 		System.out.println("===============");
-		System.out.println("x: " + this.x);
-		System.out.println("y: " + this.y);
+		System.out.println("x: " + this.getX());
+		System.out.println("y: " + this.getY());
 		System.out.println("===============");
 	}
 

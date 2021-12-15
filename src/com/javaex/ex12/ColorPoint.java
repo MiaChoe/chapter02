@@ -1,4 +1,4 @@
-//2021.12.15(수)08:21
+//2021.12.15(수)08:21, Undone/14:52
 
 package com.javaex.ex12;
 
@@ -39,6 +39,7 @@ public class ColorPoint extends Point {
 		System.out.println("===============");
 		System.out.println("x: " + super.getX() + this.color);
 		System.out.println("y: " + super.getY() + this.color);
+		System.out.println("color: " + this.color);
 		System.out.println("===============");
 	}
 }
@@ -55,4 +56,7 @@ public class ColorPoint extends Point {
  * 
  * run돌리고 나니 cp1과 cp2는 0red, 0null이 나왔음. 수정 요함. 
  * 파라미터랑 무관한 거고 Point는 되는데 ColorPoint가 문제인 거야
+ * 
+ * 2021.12.15(수) 14:55_p, cp1은 생성자 2개씩 꿰찼는데 cp2는 생성자1개만 썼다
+ * 그런데 0이 앞에 찍히기로는 cp1과 cp2가 같이. 왜일까.
  */
