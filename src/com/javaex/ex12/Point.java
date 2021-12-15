@@ -1,21 +1,47 @@
-package com.javaex.ex12;//2021.11.26(금)16:07과제로 04.상속과 다형성 중 상속
+//2021.12.15(수)08:21
 
-/*
-[문제]
-Point 클래스를 만드세요.
-	1)생성자, getter/setter, showInfo()
-
-Point 클래스를 상속받아 ColorPoint 클래스를 만드세요.
-	1)생성자, getter/setter, showInfo()
-
-PointApp 클래스를 통해서 인스턴스를 생성하고 showInfo()를 통해 확인하세요.
-	1)Point p = new Point(4,4);
-	2)ColorPoint  cp1 = new ColorPoint(“red”);
-	3)ColorPoint  cp2 = new ColorPoint(10,10,“blue”);
-
-자식 클래스와 부모클래스의 생성자 순서를 확인하세요
-*/
+package com.javaex.ex12;
 
 public class Point {
+
+	// 필드
+	private int x;
+	private int y;
+
+	// 생성자
+	public Point() {
+		System.out.println("Point()");
+	}
+
+	public Point(int x, int y) {
+		this.x = x;
+		this.y = y;
+		System.out.println("Point(2)");
+	}
+
+	// 메소드gs
+	public int getX() {
+		return x;
+	}
+
+	public void setX(int x) {
+		this.x = x;
+	}
+
+	public int getY() {
+		return y;
+	}
+
+	public void setY(int y) {
+		this.y = y;
+	}
+
+	// 메소드 일반
+	void showInfo() {
+		System.out.println("===============");
+		System.out.println("x: " + this.x);
+		System.out.println("y: " + this.y);
+		System.out.println("===============");
+	}
 
 }
