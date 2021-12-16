@@ -1,23 +1,22 @@
-//2021.11.29(월)14:44수업,
+//2021.11.29(월)14:44수업/Done_2021.12.16(목)08:15
 
 package com.javaex.ex14;
 
 public class Shape {
-	//필드
-	protected String lineColor; 
+	// 필드
+	protected String lineColor;
 	protected String fillColor;
-	
-	
-	//생성자
-	public Shape() {		
+
+	// 생성자
+	public Shape() {
 	}
-	
+
 	public Shape(String lineColor, String fillColor) {
 		this.lineColor = lineColor;
 		this.fillColor = fillColor;
 	}
 
-	//메소드gs
+	// 메소드gs
 	public String getLineColor() {
 		return lineColor;
 	}
@@ -34,12 +33,10 @@ public class Shape {
 		this.fillColor = fillColor;
 	}
 
-		
-	//메소드일반
+	// 메소드일반
 	@Override
 	public String toString() {
 		return "Shape [lineColor=" + lineColor + ", fillColor=" + fillColor + "]";
-	}	
-	
-	
+	}
+
 }
