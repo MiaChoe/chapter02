@@ -1,25 +1,23 @@
-//2021.11.29(월)16:19수업
+//2021.11.29(월)16:19수업/Done_2021.12.16(목)08:15
 
 package com.javaex.ex14;
 
 public class Triangle extends Shape {
-	//필드
-	private String lineColor;
-	private String fillColor;
+	// 필드
 	private int width;
 	private int height;
-	
-	//생성자
-	public Triangle() {		
+
+	// 생성자
+	public Triangle() {
 	}
-	
+
 	public Triangle(String lineColor, String fillColor, int width, int height) {
 		super(lineColor, fillColor);
 		this.width = width;
 		this.height = height;
 	}
-	
-	//메소드 gs
+
+	// 메소드 gs
 	public String getLineColor() {
 		return lineColor;
 	}
@@ -52,7 +50,7 @@ public class Triangle extends Shape {
 		this.height = height;
 	}
 
-	//메소드 일반
+	// 메소드 일반
 	@Override
 	public String toString() {
 		return "Triangle [lineColor=" + lineColor + ", fillColor=" + fillColor + ", width=" + width + ", height="
@@ -60,7 +58,12 @@ public class Triangle extends Shape {
 	}
 
 	public void draw() {
-		System.out.println("선색:" + lineColor + " 면색:" + fillColor + " 가로:" + width + " 세로:" + height +"인 삼각형입니다.");
+		System.out.println("선색:" + lineColor + " 면색:" + fillColor + " 가로:" + width + " 세로:" + height + "인 삼각형을 그렸습니다.");
 	}
-	
+
 }
+
+/*
+ * 2021.12.16(목)08:26_생성자: super.lineColor = lineColor;는 에러 발생. 부모 클래스가 private로
+ * 보호되고 있기 때문
+ */
