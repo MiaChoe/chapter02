@@ -2,7 +2,7 @@
 
 package com.javaex.ex14;
 
-public class ShapeApp {
+public class ShapeApp { 
 
 	public static void main(String[] args) {
 

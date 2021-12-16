@@ -2,7 +2,7 @@
 
 package com.javaex.ex14;
 
-public class Circle extends Shape {
+public class Circle extends Shape { 
 	// 필드: 부모에서 상속받은 lineColor와 fillColor를 써줘도 무방함
 	private int radius;
 

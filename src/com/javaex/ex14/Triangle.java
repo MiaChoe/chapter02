@@ -2,7 +2,7 @@
 
 package com.javaex.ex14;
 
-public class Triangle extends Shape {
+public class Triangle extends Shape { 
 	// 필드
 	private int width;
 	private int height;

@@ -2,7 +2,7 @@
 
 package com.javaex.ex14;
 
-public class Rectangle extends Shape {
+public class Rectangle extends Shape { 
 	// 필드
 	private int width;
 	private int height;
