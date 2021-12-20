@@ -14,7 +14,6 @@ public class Triangle {
 	}
 
 	public Triangle(String lineColor, String fillColor, int width, int height) {
-		super();
 		this.lineColor = lineColor;
 		this.fillColor = fillColor;
 		this.width = width;

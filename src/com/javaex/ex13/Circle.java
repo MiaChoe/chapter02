@@ -13,7 +13,6 @@ public class Circle {
 	}
 
 	public Circle(String lineColor, String fillColor, int radius) {
-		super();
 		this.lineColor = lineColor;
 		this.fillColor = fillColor;
 		this.radius = radius;
